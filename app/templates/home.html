@@ -1,1 +1,9 @@
-<h1>Home Page</h1>
+<section class="section one">
+    <h1>Home Page</h1>
+</section>
+
+<section class="section two">
+  <div class="chat rooms container">
+    <a ng-repeat="room in home.rooms">{{room.$value}}</a>
+  </div>
+</section>

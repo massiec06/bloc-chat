@@ -7,6 +7,7 @@
               });
 
          $stateProvider
+
              .state('home', {
                  url: '/',
                  controller: 'HomeCtrl as home',
