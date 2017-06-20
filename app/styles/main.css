@@ -1,0 +1,37 @@
+html,body,.container {
+    height:100%;
+}
+.container {
+    display:table;
+    width: 100%;
+    padding: 0; /*set left/right padding according to needs*/
+    box-sizing: border-box;
+}
+
+.container > .row {
+    height: 100%;
+    display: table-row;
+}
+
+.container > .row > .col-md-3 {
+    background: grey;
+}
+.container > .row > .col-md-9 {
+    background: white;
+}
+
+.row .no-float {
+  display: table-cell;
+  float: none;
+}
+
+.odd {
+  background: #ddd;
+}
+
+#room-title {
+  font-size: 50px;
+  color: blue;
+  font-weight: bold;
+  font-family: fantasy;
+}
