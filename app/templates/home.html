@@ -11,9 +11,9 @@
 
         <div class="col-md-9 no-float">
           <div class="row">
-            <div class="col-md-12" id="room-title">
-              {{home.currentRoom.$value}}
-            </div>
+            <div class="col-md-12" id="room-title">{{home.currentRoom.$value}}</div>
+            <input type="text" name="input" placeholder="Type your message here" class="message-box" ng-model="home.newMessage.content" style="width:500px;">
+						<button class="btn-new-message" type="button" ng-click="home.sendMessage()">Send message</button>
           </div>
           <div class="row message" ng-class-odd="'odd'" ng-class-even="'even'" ng-repeat="message in home.messages">
             <div class="col-md-12">
@@ -22,7 +22,7 @@
                   {{message.username}}
                 </div>
                 <div class="col-md-2">
-                  {{message.sentAt}}
+                  {{message.sentAt | date:'short'}}
                 </div>
               </div>
               <div class="row">
@@ -32,6 +32,7 @@
               </div>
             </div>
           </div>
+
         </div>
     </div>
 </div>
